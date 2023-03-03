@@ -19,7 +19,8 @@
     "gen-release-note": "modern gen-release-note",
     "release": "modern release",
     "new": "modern new",
-    "upgrade": "modern upgrade"
+    "upgrade": "modern upgrade",
+    "test": "modern test"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -33,21 +34,23 @@
     "node_modules/",
     "dist/"
   ],
-  "dependencies": {},
-  "peerDependencies": {},
+  "dependencies": {
+    "@modern-js/utils": "^2.7.0"
+  },
   "devDependencies": {
-    "@modern-js/module-tools": "2.7.0",
-    "@modern-js/eslint-config": "2.7.0",
-    "@modern-js/tsconfig": "2.7.0",
     "@modern-js-app/eslint-config": "2.7.0",
-    "rimraf": "~3.0.2",
-    "lint-staged": "~13.1.0",
-    "prettier": "~2.8.1",
-    "husky": "~8.0.1",
-    "typescript": "~4.9.4",
+    "@modern-js/eslint-config": "2.7.0",
+    "@modern-js/module-tools": "2.7.0",
+    "@modern-js/tsconfig": "2.7.0",
     "@types/jest": "~29.2.4",
     "@types/node": "~16.11.7",
-    "@types/react": "~18.0.26"
+    "@types/react": "~18.0.26",
+    "husky": "~8.0.1",
+    "lint-staged": "~13.1.0",
+    "prettier": "~2.8.1",
+    "rimraf": "~3.0.2",
+    "typescript": "~4.9.4",
+    "@modern-js/plugin-testing": "2.7.0"
   },
   "sideEffects": [],
   "publishConfig": {
